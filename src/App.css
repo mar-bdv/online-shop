@@ -1,38 +1,277 @@
-.App {
+
+body{
+  margin: 0px;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+.image-cart{
+  width: 40px;
+}
+.top-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Merriweather Sans', sans-serif;
+  padding: 20px;
+}
+.link-nav{
+  text-decoration: none;
+  color: #E08D91;
+  font-size: 27px;
+  text-transform: lowercase;
+}
+.link-nav:hover{
+  color: #b77074;
+}
+.sparkle{
+  margin-right: auto;
+  font-family: 'Yeseva One', cursive;
+  color: #E08D91;
+  font-size: 40px;
+  margin: 4px;
+}
+.girl-back{
+  width: 100%;
+}
+.home-div{
+  background-image: url(/src/images/background.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+}
+.center-home{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top:120px;
+}
+.home-hr{
+  width: 150px;
+  border: 1px solid white;
+  border-top: none;
+}
+.p-home-top{
+  color: white;
+  font-size: 70px;
+  font-family: 'Yeseva One', cursive;
+  margin-bottom: 5px;
+}
+.home-text{
+  color: white;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 30px;
+}
+.home-btn{
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 30px;
+  margin-top: 140px;
+}
+.home-btn:hover{
+  cursor: pointer;
+  border: none;
+  border-bottom: 1px solid white;
+}
+.image-div{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+.catalog-image-girl{
+  width: 100%;
+  background-size: cover;
+}
+
+.center-text-catalog-par{
+  font-size: 60px;
+  color: white;
+  font-family: 'Yeseva One', cursive;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-left: 50%;
+  margin-right: 50%;
+  margin-top: 160px;
+}
+.productsDiv{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 300px;
+  margin: 60px;
+  text-align: end;
+}
+.productsBigDiv{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+.par-description{
+  font-size: 15px;
+}
+.par-name{
+  font-weight: bolder;
+}
+.par-oldPrice{
+  display: inline;
+  color: gray;
+  font-size: 18px;
+}
+.par-newPrice{
+  display: inline;
+  padding-right: 15px;
+  font-size: 20px;
+}
+.buttons-plusMinus{
+  display: flex;
+  justify-content: center;
+  margin: 8px;
+  align-items: center;
   text-align: center;
+  margin-bottom: 0px;
+}
+.btn-plus{
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  margin: 7px;
+  border-radius: 5px;
+}
+.btn-plus:hover{
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.169);
+}
+.par-plus{
+  font-size: 26px;
+}
+.minus{
+  padding-bottom: 5px;
+}
+.btn-div{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.btn{
+  background-color: #F2DCDD;
+  border: none;
+  font-size: 20px;
+  padding: 6px 30px;
+  color: #E08D91;
+  border-radius: 10px;
+}
+.btn:hover{
+  background-color: #d6b8b9;
+  color: #c7686d;
+  cursor: pointer;
+}
+.categoryButton{
+  background-color: #F2DCDD;
+  border: none;
+  font-size: 20px;
+  padding: 6px 30px;
+  color: #E08D91;
+  border-radius: 10px;
+  margin: 10px;
+}
+.categoryButton:hover{
+  cursor: pointer;
+}
+.categoryButtonSelected{
+  background-color: #E08D91;
+  color: #F2DCDD;
+}
+.filter-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 600px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 5px auto;
+}
+.cart-item-div{
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+
+}
+.cart-img{
+  margin-right: auto;
+}
+.cart-name{
+  font-weight: bold;
+}
+.cart-price{
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+  font-size: 20px;
+  margin-right: auto;
+}
+.cart-text{
+  margin: 20px;
+  width: 400px;
+  margin-right: auto;
+}
+.cart-old_price{
+  color: gray;
+  padding-left: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cart-BigDiv{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.cart-hr{
+  border: 1px solid #E08D91;
+  border-bottom: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cart-h2{
+  margin: 10px;
+  font-size: 30px;
+}
+.del_icon{
+  width: 50px;
+}
+.del_icon:hover{
+  cursor: pointer;
+}
+.image-cart{
+  position: absolute;
+  text-decoration: none;
+}
+.cart-link{
+  text-decoration: none;
+}
+.cart-number{
+  position: relative;
+  left: 15px;
+  color: #E08D91;
+  text-decoration: none;
+}
+.footer-price{
+  margin: 50px;
+}
+footer{
+  margin: 5px;
+  margin-bottom: auto;
+  font-size: 15px;
+}
+.contacts-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+iframe{
+  border: none;
 }
