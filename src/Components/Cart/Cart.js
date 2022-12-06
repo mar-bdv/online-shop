@@ -13,7 +13,7 @@ const Cart = () =>{
                 <hr className="cart-hr"></hr>
             </div>
             <div className="cart-BigDiv">
-                {cartItems.map(cartItem => <CartItem cartItem={cartItem}/>)}
+                {cartItems.map((cartItem, index) => <CartItem key={index} cartItem={cartItem}/>)}
             </div>
             <div className="footer-price">
                 <h2>Всего: {totalPrice} руб.</h2>

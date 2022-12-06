@@ -1,9 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { dataBeauty } from "../Components/Catalog/dataBeauty";
 
 export const beautyItemsSlice = createSlice({
     name: 'beautyItems',
     initialState: {
-        selectedCategory: 'всё(27)'
+        selectedCategory: `всё (${dataBeauty.length})`
     },
     reducers:{
         filterCategory: (state, action) =>{

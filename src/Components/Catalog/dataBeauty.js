@@ -270,4 +270,6 @@ export const dataBeauty = [
         category: "сыворотки",
 
     },
+
+    
 ]

@@ -79,15 +79,12 @@ body{
 .image-div{
   display: flex;
   justify-content: center;
-  width: 100%;
-  background-size: cover;
+
   position: relative;
 }
 .catalog-image-girl{
-  width: 100%;
-  background-size: cover;
+  flex: 1;
 }
-
 .center-text-catalog-par{
   font-size: 60px;
   color: white;
@@ -97,7 +94,7 @@ body{
   position: absolute;
   margin-left: 50%;
   margin-right: 50%;
-  margin-top: 160px;
+
 }
 .productsDiv{
   display: flex;
@@ -240,10 +237,8 @@ body{
   margin: 10px;
   font-size: 30px;
 }
-.del_icon{
-  width: 50px;
-}
-.del_icon:hover{
+
+.del-icon:hover{
   cursor: pointer;
 }
 .image-cart{

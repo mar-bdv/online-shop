@@ -25,7 +25,9 @@ function App() {
 
 
           {/* <label className="side-button-1" for="side-checkbox"></label> */}
-        <Link className='cart-link' to="/cart"><img className='image-cart' src={imageCart} alt="cart"/><p className='cart-number'>{cartItems.length}</p></Link> 
+        <Link className='cart-link' to="/cart"><img className='image-cart' src={imageCart} alt="cart"/>
+          <p className='cart-number'>{cartItems.length}</p>
+        </Link> 
       </nav>
       <Routes>
         <Route path='/' element={<Home/>}/>

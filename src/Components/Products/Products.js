@@ -8,19 +8,21 @@ import { getSelectedCategory } from "../../Redux/beautyItemsSlice";
 const Products = () =>{
     const selectedCategory = useSelector(getSelectedCategory)
     return(<div>
+        
         <div className="image-div">
             <img alt="girl" className="catalog-image-girl" src={imageGirl}/>
-                <p className="center-text-catalog-par">КАТАЛОГ</p>
+            <p className="center-text-catalog-par">КАТАЛОГ</p>
         </div>
-        <AllCategories/>
+            <AllCategories/>
         
         <div className="productsBigDiv">
+            
             {dataBeauty
             .filter(product =>{
-                if(selectedCategory === "всё(27)") return true
+                if(selectedCategory === `всё (${dataBeauty.length})`) return true
                 return selectedCategory === product.category
             })
-            .map(allProducts => <Product productProp={allProducts}/>)}
+            .map((allProducts) => <Product key={allProducts.id} productProp={allProducts}/>)}
         </div>
     </div>)
 }
