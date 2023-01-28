@@ -7,7 +7,7 @@ export const beautyItemsSlice = createSlice({
         selectedCategory: `всё (${dataBeauty.length})`
     },
     reducers:{
-        filterCategory: (state, action) =>{
+        filterCategory: (state, action ) =>{
             state.selectedCategory = action.payload
         }
     }
